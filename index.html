@@ -12,7 +12,7 @@
   <!-- Favicons -->
   <link href="img/SIELOGO.png" rel="icon" />
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <!--external css-->
@@ -485,26 +485,11 @@
                             </div>
                             <div _ngcontent-c10="" class="col-md-6">
                               <label _ngcontent-c10="">Fecha</label>
-                              <my-date-picker _ngcontent-c10="" required="" class="ng-untouched ng-pristine ng-valid">
-                                <div class="mydp" style="width: 100%;">
-                                  <!---->
-                                  <div class="selectiongroup">
-                                    <!----><input autocomplete="off" autocorrect="off"
-                                      class="selection ng-untouched ng-pristine ng-valid" ngtype="text"
-                                      spellcheck="false" aria-label="Date input field" placeholder="aaaa-mm-dd"
-                                      style="height: 34px; font-size: 14px;">
-                                    <div class="selbtngroup" style="height: 34px;">
-                                      <!---->
-                                      <!---->
-                                      <!----><button class="btnclear btnclearenabled" type="button"
-                                        aria-label="Clear Date"><span class="mydpicon icon-mydpremove"></span></button>
-                                      <button class="btnpicker btnpickerenabled" type="button"
-                                        aria-label="Open Calendar"><span
-                                          class="mydpicon icon-mydpcalendar"></span></button></div>
-                                  </div>
-                                  <!---->
+                              <div class="row pt-3">
+                                <div class="col">
+                                    <input data-date-format="dd/mm/yyyy" id="datepicker">
                                 </div>
-                              </my-date-picker>
+                            </div>
 
                             </div>
                             <div _ngcontent-c10="" class="col-md-6 form-group">
@@ -549,8 +534,18 @@
     <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script type="text/javascript">
+    $('#datepicker').datepicker({
+        weekStart: 1,
+        daysOfWeekHighlighted: "6,0",
+        autoclose: true,
+        todayHighlight: true,
+    });
+    $('#datepicker').datepicker("setDate", new Date());
+</script>
   <script src="lib/jquery/jquery.min.js"></script>
-
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
   <script src="lib/jquery.scrollTo.min.js"></script>
