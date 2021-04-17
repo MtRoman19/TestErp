@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -19,7 +19,7 @@
     <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--external css-->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/zabuto_calendar.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -316,7 +316,7 @@
             </li>
             <li>
               <div class="row">
-                <a class="active col-xs-9" href="../../index.html">
+                <a class="active col-xs-9" href="./index.html">
                   <i class="fa fa-file-code-o"></i>
                   <span>Facturación </span>
                 </a>
@@ -328,7 +328,7 @@
 
             <li>
               <div class="row">
-                <a class="col-xs-9" href="../../index.html">
+                <a class="col-xs-9" href="../retencion/index.html">
                   <i class="fa fa-file-text-o"></i>
                   <span>Retención </span>
                 </a>
@@ -457,278 +457,214 @@
           <div class="content-wrapper">
             <router-outlet></router-outlet>
             <app-facturas _nghost-c6="" class="">
-              <div _ngcontent-c6="" class="content-heading">
-                <span _ngcontent-c6="">Facturación</span>
+              <div  class="content-heading">
+                <span >Facturación</span>
                 <a
-                  _ngcontent-c6=""
+                  
                   class="btn-new bg-green"
                   placement="left"
                   tooltip="Nueva factura"
                   route="./add"
                   href="/panel/facturas/add"
                 >
-                  <em _ngcontent-c6="" class="fa fa-plus"></em>
+                  <em  class="fa fa-plus"></em>
                 </a>
               </div>
-              <div _ngcontent-c6="" class="filter-container closeSidebar">
-                <span _ngcontent-c6="" class="fa fa-close closeSidebar"></span>
+              <div  class="filter-container closeSidebar">
+                <span  class="fa fa-close closeSidebar"></span>
                 <!---->
                 <!---->
-                <div _ngcontent-c6="" class="animated fadeInRight sideoptions">
-                  <div _ngcontent-c6="" class="filters">
+                <div  class="animated fadeInRight sideoptions">
+                  <div  class="filters">
                     <div
-                      _ngcontent-c6=""
-                      class="pull-left wd-md"
+                      
+                      class="pull-left wd-md col-lg-2"
                       id="dropdownOrden"
                     >
-                      <label _ngcontent-c6="" for="">Ordenar por</label>
+                      <label  for="">Ordenar por</label>
                       <div
-                        _ngcontent-c6=""
+                        
                         class="btn-group mostrar-btn"
                         dropdown=""
                       >
                         <button
-                          _ngcontent-c6=""
+                          
                           class="btn"
                           dropdowntoggle=""
                           aria-haspopup="true"
                         >
-                          <strong _ngcontent-c6="">Fecha</strong>
-                          <b _ngcontent-c6="" class="fa fa-caret-down"></b>
+                          <strong >Fecha</strong>
+                          <b  class="fa fa-caret-down"></b>
                         </button>
                         <!---->
                       </div>
                     </div>
 
                     <div
-                      _ngcontent-c6=""
-                      class="pull-left wd-md"
+                      
+                      class="pull-left wd-md col-lg-3"
                       id="dropdownDireccion"
                     >
-                      <label _ngcontent-c6="" for="">Dirección</label>
+                      <label  for="">Dirección</label>
                       <div
-                        _ngcontent-c6=""
+                        
                         class="btn-group mostrar-btn"
                         dropdown=""
                       >
                         <button
-                          _ngcontent-c6=""
+                          
                           class="btn"
                           dropdowntoggle=""
                           aria-haspopup="true"
                         >
-                          <strong _ngcontent-c6="">Descendente</strong>
-                          <b _ngcontent-c6="" class="fa fa-caret-down"></b>
+                          <strong >Descendente</strong>
+                          <b  class="fa fa-caret-down"></b>
                         </button>
                         <!---->
                       </div>
                     </div>
                   </div>
-                  <div _ngcontent-c6="" class="mb-lg clearfix filters">
-                    <div _ngcontent-c6="" class="pull-left wd-md" id="links">
-                      <label _ngcontent-c6="" for=""
+                  <div  class="mb-lg clearfix filters">
+                    <div  class="pull-left wd-md" id="links">
+                      <label  for=""
                         >Opciones de descarga</label
                       >
-                      <a _ngcontent-c6="" href="#"
+                      <a  href="#"
                         >PDFS
                         <span
-                          _ngcontent-c6=""
+                          
                           class="fa fa-arrow-circle-o-down"
                         ></span>
                       </a>
                       <a
-                        _ngcontent-c6=""
+                        
                         target="_blank"
                         href="https://api.kubox.mx/v2/factura/descargaMasiva?folio=&amp;fini=&amp;ffin=&amp;status=t&amp;tipo=f&amp;fcliente=&amp;clienteText=&amp;fempresa=4&amp;orderby=fecha&amp;orderdir=desc&amp;perpage=30&amp;page=1&amp;allData=1&amp;month=&amp;token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5rdWJveC5teC92Mi9hdXRoL2xvZ2luIiwiaWF0IjoxNjE1MzEyNjU1LCJleHAiOjE2MTUzMzQyNTUsIm5iZiI6MTYxNTMxMjY1NSwianRpIjoiTmZkNHFHZmRCSVl6R0x5aiIsInN1YiI6NDQyNCwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.yeSbtENBNpv2748bGiGKvKBrzO9UwavOmF0mOwELors"
                         >XMLS
                         <span
-                          _ngcontent-c6=""
+                          
                           class="fa fa-arrow-circle-o-down"
                         ></span>
                       </a>
                       <a
-                        _ngcontent-c6=""
+                        
                         target="_blank"
                         href="https://api.kubox.mx/v2/factura/descargaReporte?folio=&amp;fini=&amp;ffin=&amp;status=t&amp;tipo=f&amp;fcliente=&amp;clienteText=&amp;fempresa=4&amp;orderby=fecha&amp;orderdir=desc&amp;perpage=30&amp;page=1&amp;allData=0&amp;month=&amp;getXls=true&amp;token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5rdWJveC5teC92Mi9hdXRoL2xvZ2luIiwiaWF0IjoxNjE1MzEyNjU1LCJleHAiOjE2MTUzMzQyNTUsIm5iZiI6MTYxNTMxMjY1NSwianRpIjoiTmZkNHFHZmRCSVl6R0x5aiIsInN1YiI6NDQyNCwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.yeSbtENBNpv2748bGiGKvKBrzO9UwavOmF0mOwELors"
                         >EXCEL
-                        <span _ngcontent-c6="" class="fa fa-table"></span>
+                        <span  class="fa fa-table"></span>
                       </a>
                       <a
-                        _ngcontent-c6=""
+                        
                         target="_blank"
                         href="https://api.kubox.mx/v2/factura/descargaReporte?folio=&amp;fini=&amp;ffin=&amp;status=t&amp;tipo=f&amp;fcliente=&amp;clienteText=&amp;fempresa=4&amp;orderby=fecha&amp;orderdir=desc&amp;perpage=30&amp;page=1&amp;allData=0&amp;month=&amp;token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5rdWJveC5teC92Mi9hdXRoL2xvZ2luIiwiaWF0IjoxNjE1MzEyNjU1LCJleHAiOjE2MTUzMzQyNTUsIm5iZiI6MTYxNTMxMjY1NSwianRpIjoiTmZkNHFHZmRCSVl6R0x5aiIsInN1YiI6NDQyNCwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.yeSbtENBNpv2748bGiGKvKBrzO9UwavOmF0mOwELors"
                         >REPORTE
-                        <span _ngcontent-c6="" class="fa fa-newspaper-o"></span>
+                        <span  class="fa fa-newspaper-o"></span>
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div _ngcontent-c6="" class="row">
-                <div _ngcontent-c6="" class="col-lg-12 mb-lg clearfix">
+              <div  class="row">
+                <div  class="col-lg-12 mb-lg clearfix">
                   <div
-                    _ngcontent-c6=""
-                    class="pull-left wd-md fullWidth"
+                    
+                    class="pull-left wd-md fullWidth col-lg-2"
                     style="position: relative"
                   >
-                    <label _ngcontent-c6="" for="">Buscar</label>
+                    <label  for="">Buscar</label>
                     <input
-                      _ngcontent-c6=""
+                      
                       class="form-control ng-untouched ng-pristine ng-valid"
                       id="filterTable"
                       placeholder="(Serie - Folio), Folio"
                     />
-                    <em _ngcontent-c6="" class="fa fa-search cursor"></em>
+                    <em  class="fa fa-search cursor"></em>
                   </div>
 
                   <div
-                    _ngcontent-c6=""
-                    class="pull-left wd-md fullWidth"
+                    
+                    class="pull-left wd-md fullWidth col-lg-2"
                     id="searchCustomer"
                     style="position: relative"
                   >
-                    <div _ngcontent-c6="" class="form-group customSelect">
-                      <label _ngcontent-c6="" for="">Clientes </label>
+                    <div  class="form-group customSelect">
+                      <label  for="">Clientes </label>
                       <input
-                        _ngcontent-c6=""
+                        
                         class="form-control ng-untouched ng-pristine ng-valid"
                         placeholder="Escribe para buscar"
                         type="text"
                       />
                       <!---->
-                      <em _ngcontent-c6="" class="fa fa-search cursor"></em>
+                      <em  class="fa fa-search cursor"></em>
                       <!---->
                       <!---->
                     </div>
                   </div>
-                  <div _ngcontent-c6="" class="pull-left wd-md" id="fromDate">
-                    <label _ngcontent-c6="" for="">Desde</label>
-                    <my-date-picker
-                      _ngcontent-c6=""
-                      placeholder="No seleccionada"
-                      required=""
-                      class="ng-untouched ng-pristine ng-invalid"
-                    >
-                      <div class="mydp" style="width: 100%">
-                        <!---->
-                        <div class="selectiongroup">
-                          <!----><input
-                            autocomplete="off"
-                            autocorrect="off"
-                            class="selection ng-untouched ng-pristine ng-valid"
-                            ngtype="text"
-                            spellcheck="false"
-                            aria-label="Date input field"
-                            placeholder="No seleccionada"
-                            style="height: 34px; font-size: 14px"
-                          />
-                          <div class="selbtngroup" style="height: 34px">
-                            <!---->
-                            <!---->
-                            <!---->
-                            <button
-                              class="btnpicker btnpickerenabled"
-                              type="button"
-                              aria-label="Open Calendar"
-                            >
-                              <span class="mydpicon icon-mydpcalendar"></span>
-                            </button>
-                          </div>
-                        </div>
-                        <!---->
+                  <div  class="pull-left wd-md col-lg-2" id="fromDate">
+                      <label  for="">Desde</label>
+                      <div class="col-2 ">
+                        <input data-date-format="dd/mm/yyyy" id="datepicker" style="height: 34px; border-radius: 4px; border: 1px solid #ccc;">
                       </div>
-                    </my-date-picker>
                   </div>
-                  <div _ngcontent-c6="" class="pull-left wd-md" id="toDate">
-                    <label _ngcontent-c6="" for="">Hasta</label>
-                    <my-date-picker
-                      _ngcontent-c6=""
-                      placeholder="No seleccionada"
-                      required=""
-                      class="ng-untouched ng-pristine ng-invalid"
-                    >
-                      <div class="mydp" style="width: 100%">
-                        <!---->
-                        <div class="selectiongroup">
-                          <!----><input
-                            autocomplete="off"
-                            autocorrect="off"
-                            class="selection ng-untouched ng-pristine ng-valid"
-                            ngtype="text"
-                            spellcheck="false"
-                            aria-label="Date input field"
-                            placeholder="No seleccionada"
-                            style="height: 34px; font-size: 14px"
-                          />
-                          <div class="selbtngroup" style="height: 34px">
-                            <!---->
-                            <!---->
-                            <!---->
-                            <button
-                              class="btnpicker btnpickerenabled"
-                              type="button"
-                              aria-label="Open Calendar"
-                            >
-                              <span class="mydpicon icon-mydpcalendar"></span>
-                            </button>
-                          </div>
+                  <div  class="pull-left wd-md col-lg-2" id="toDate">
+                    <label  for="">Hasta</label>
+                        <div class="col-2">
+                            <input data-date-format="dd/mm/yyyy" id="datepicker2" style="height: 34px; border-radius: 4px; border: 1px solid #ccc;">
                         </div>
-                        <!---->
-                      </div>
-                    </my-date-picker>
                   </div>
 
                   <div
-                    _ngcontent-c6=""
+                    
                     class="pull-left wd-md"
                     id="dropdownStatus"
                   >
                     <div
-                      _ngcontent-c6=""
-                      class="btn-group mostrar-btn"
+                      
+                      class="btn-group mostrar-btn col-lg-2"
                       dropdown=""
                     >
-                      <label _ngcontent-c6="" for="">Mostrar</label>
+                      <label  for="">Mostrar</label>
                       <button
-                        _ngcontent-c6=""
+                        
                         class="btn"
                         dropdowntoggle=""
                         aria-haspopup="true"
                       >
-                        <strong _ngcontent-c6="">Todas</strong>
-                        <b _ngcontent-c6="" class="fa fa-caret-down"></b>
+                        <strong >Todas</strong>
+                        <b  class="fa fa-caret-down"></b>
                       </button>
                       <!---->
                     </div>
                   </div>
 
                   <div
-                    _ngcontent-c6=""
-                    class="pull-left wd-md"
+                    
+                    class="pull-left wd-md col-lg-2"
                     id="moreOptions"
                   >
-                    <div _ngcontent-c6="" class="btn-group mostrar-btn">
-                      <button _ngcontent-c6="" class="btn">
-                        <strong _ngcontent-c6="">Más opciones</strong>
+                    <div  class="btn-group mostrar-btn">
+                      <button  class="btn">
+                        <strong >Más opciones</strong>
                       </button>
                     </div>
                   </div>
-                  <div _ngcontent-c6="" class="pull-left wd-md resetFiltros">
+                  <div  class="pull-left wd-md resetFiltros">
                     <button
-                      _ngcontent-c6=""
+                      
                       class="btn delete"
                       title="Eliminar filtros"
                     >
                       <b
-                        _ngcontent-c6=""
+                        
                         class="fa fa-trash"
                         style="margin-right: 10px"
                       ></b>
-                      <span _ngcontent-c6="" class="only-mobile"
+                      <span  class="only-mobile"
                         >ELiminar filtros</span
                       >
                     </button>
-                    <toaster-container _ngcontent-c6="" class="ng-tns-c8-3">
+                    <toaster-container  class="ng-tns-c8-3">
                       <div
                         class="ng-tns-c8-3 toast-top-right"
                         id="toast-container"
@@ -739,75 +675,75 @@
                   </div>
                 </div>
               </div>
-              <div _ngcontent-c6="" class="row">
-                <div _ngcontent-c6="" class="col-md-12 noPadding">
+              <div  class="row">
+                <div  class="col-md-12 noPadding">
                   <div
-                    _ngcontent-c6=""
+                    
                     class="container-filters panel panel-default"
                   >
-                    <div _ngcontent-c6="" class="table-responsive">
-                      <table _ngcontent-c6="" class="table">
-                        <thead _ngcontent-c6="">
-                          <tr _ngcontent-c6="">
-                            <th _ngcontent-c6="" class="center" width="5%">
+                    <div  class="table-responsive">
+                      <table  class="table">
+                        <thead >
+                          <tr >
+                            <th  class="center" width="5%">
                               Status
                             </th>
-                            <th _ngcontent-c6="" class="center" width="5%">
+                            <th  class="center" width="5%">
                               Timbrada
                             </th>
-                            <th _ngcontent-c6="" width="10%">Serie - Folio</th>
-                            <th _ngcontent-c6="" class="left" width="20%">
+                            <th  width="10%">Serie - Folio</th>
+                            <th  class="left" width="20%">
                               Cliente
                             </th>
-                            <th _ngcontent-c6="" width="20%">Fecha</th>
-                            <th _ngcontent-c6="" width="20%">Versión</th>
-                            <th _ngcontent-c6="" width="20%">Total</th>
-                            <th _ngcontent-c6="" width="5%">Acciones</th>
+                            <th  width="20%">Fecha</th>
+                            <th  width="20%">Versión</th>
+                            <th  width="20%">Total</th>
+                            <th  width="5%">Acciones</th>
                           </tr>
                         </thead>
-                        <tbody _ngcontent-c6=""></tbody>
+                        <tbody ></tbody>
                         <tfoot>
                           <tr>
                             <!---->
                             <div
-                              _ngcontent-c6=""
+                              
                               class="pagination-section row"
                             >
                               <div
-                                _ngcontent-c6=""
+                                
                                 class="form-group pagination-wrap col-xs-12 col-sm-6 col-md-4 col-lg-2"
                               >
                                 <td>
                                   <label
-                                    _ngcontent-c6=""
+                                    
                                     class="btn-back-pagination"
                                     for=""
                                   >
                                     <span
-                                      _ngcontent-c6=""
+                                      
                                       class="fa fa-caret-square-o-left fa-2x"
                                     ></span>
                                   </label>
                                 </td>
                                 <td>
-                                  <!-- <input _ngcontent-c6="" type="text" value="2" disabled width="10" class="ng-untouched ng-pristine ng-valid"> -->
-                                  <label _ngcontent-c6="" for="">
-                                    <strong _ngcontent-c6="">1</strong>
+                                  <!-- <input  type="text" value="2" disabled width="10" class="ng-untouched ng-pristine ng-valid"> -->
+                                  <label  for="">
+                                    <strong >1</strong>
                                   </label>
 
-                                  <label _ngcontent-c6="" for="">
+                                  <label  for="">
                                     de
-                                    <strong _ngcontent-c6="">1</strong>
+                                    <strong >1</strong>
                                   </label>
                                 </td>
                                 <td>
                                   <label
-                                    _ngcontent-c6=""
+                                    
                                     class="btn-next-pagination"
                                     for=""
                                   >
                                     <span
-                                      _ngcontent-c6=""
+                                      
                                       high="30px"
                                       class="next-button fa fa-caret-square-o-right fa-2x"
                                     ></span>
@@ -849,90 +785,89 @@
       <!--footer end-->
     </section>
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/jquery/jquery.min.js"></script>
 
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
     <script
       class="include"
       type="text/javascript"
-      src="lib/jquery.dcjqaccordion.2.7.js"
+      src="../../lib/jquery.dcjqaccordion.2.7.js"
     ></script>
-    <script src="lib/jquery.scrollTo.min.js"></script>
-    <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="lib/jquery.sparkline.js"></script>
+    <script src="../../lib/jquery.scrollTo.min.js"></script>
+    <script src="../../lib/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="../../lib/jquery.sparkline.js"></script>
     <!--common script for all pages-->
-    <script src="lib/common-scripts.js"></script>
+    <script src="../../lib/common-scripts.js"></script>
     <script
       type="text/javascript"
-      src="lib/gritter/js/jquery.gritter.js"
+      src="../../lib/gritter/js/jquery.gritter.js"
     ></script>
-    <script type="text/javascript" src="lib/gritter-conf.js"></script>
+    <script type="text/javascript" src="../../lib/gritter-conf.js"></script>
     <!--script for this page-->
-    <script src="lib/sparkline-chart.js"></script>
-    <script src="lib/zabuto_calendar.js"></script>
+    <script src="../../lib/sparkline-chart.js"></script>
+    <script src="../../lib/zabuto_calendar.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        var unique_id = $.gritter.add({
-          // (string | mandatory) the heading of the notification
-          title: "Welcome to Dashio!",
-          // (string | mandatory) the text inside the notification
-          text:
-            "Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo.",
-          // (string | optional) the image to display on the left
-          image: "img/ui-sam.jpg",
-          // (bool | optional) if you want it to fade out on its own or just sit there
-          sticky: false,
-          // (int | optional) the time you want it to be alive for before fading out
-          time: 8000,
-          // (string | optional) the class name you want to apply to that specific message
-          class_name: "my-sticky-class",
-        });
+
 
         return false;
       });
     </script>
-    <script type="application/javascript">
-      $(document).ready(function () {
-        $("#date-popover").popover({
-          html: true,
-          trigger: "manual",
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script type="text/javascript">
+        $('#datepicker').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
         });
-        $("#date-popover").hide();
-        $("#date-popover").click(function (e) {
-          $(this).hide();
+        $('#datepicker').datepicker("setDate", new Date());
+        $('#datepicker2').datepicker({
+            weekStart: 1,
+            daysOfWeekHighlighted: "6,0",
+            autoclose: true,
+            todayHighlight: true,
         });
-
-        $("#my-calendar").zabuto_calendar({
-          action: function () {
-            return myDateFunction(this.id, false);
-          },
-          action_nav: function () {
-            return myNavFunction(this.id);
-          },
-          ajax: {
-            url: "show_data.php?action=1",
-            modal: true,
-          },
-          legend: [
-            {
-              type: "text",
-              label: "Special event",
-              badge: "00",
-            },
-            {
-              type: "block",
-              label: "Regular event",
-            },
-          ],
-        });
-      });
-
-      function myNavFunction(id) {
-        $("#date-popover").hide();
-        var nav = $("#" + id).data("navigation");
-        var to = $("#" + id).data("to");
-        console.log("nav " + nav + " to: " + to.month + "/" + to.year);
-      }
+        $('#datepicker2').datepicker("setDate", new Date());
     </script>
+    <script type="application/javascript">
+      // $(document).ready(function () {
+      //   $("#date-popover").popover({
+      //     html: true,
+      //     trigger: "manual",
+      //   });
+      //   $("#date-popover").hide();
+      //   $("#date-popover").click(function (e) {
+      //     $(this).hide();
+      //   });
+
+      //   $("#my-calendar").zabuto_calendar({
+      //     action: function () {
+      //       return myDateFunction(this.id, false);
+      //     },
+      //     action_nav: function () {
+      //       return myNavFunction(this.id);
+      //     },
+      //     ajax: {
+      //       url: "show_data.php?action=1",
+      //       modal: true,
+      //     },
+      //     legend: [
+      //       {
+      //         type: "text",
+      //         label: "Special event",
+      //         badge: "00",
+      //       },
+      //       {
+      //         type: "block",
+      //         label: "Regular event",
+      //       },
+      //     ],
+      //   });
+      // });
+
+    </script>
+
   </body>
 </html>
