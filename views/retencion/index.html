@@ -19,7 +19,11 @@
     <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--external css-->
     <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../../css/zabuto_calendar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/zabuto_calendar.css"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -337,6 +341,18 @@
                 ></a>
               </div>
             </li>
+
+            <li>
+              <div class="row">
+                <a class="col-xs-9" href="../empresas/index.html">
+                  <i class="fa fa-users"></i>
+                  <span>Empresas </span>
+                </a>
+                <a class="col-xs-3" href="../empresas/add.html"
+                  ><i class="fa fa-plus-circle"></i
+                ></a>
+              </div>
+            </li>
             <!-- <li class="sub-menu">
               <a href="javascript:;">
                 <i class="fa fa-desktop"></i>
@@ -458,7 +474,7 @@
             <div class="content-wrapper">
               <router-outlet></router-outlet>
               <app-retenciones _nghost-c8="" class="">
-                <div _ngcontent-c8="" class="content-heading ">
+                <div _ngcontent-c8="" class="content-heading">
                   <span _ngcontent-c8="">Retenciones</span>
                   <a
                     _ngcontent-c8=""
@@ -506,42 +522,65 @@
                       </div>
                     </div>
 
-
-                    <div _ngcontent-c8="" class="pull-left wd-md col-lg-2" id="fromDate">
-                      <label _ngcontent-c8="" for="">Desde</label>
-                      <div class="col-2 ">
-                        <input data-date-format="dd/mm/yyyy" id="datepicker" style="height: 34px; border-radius: 4px; border: 1px solid #ccc;">
-                      </div>
-                    </div>
-                    <div _ngcontent-c8="" class="pull-left wd-md col-lg-2" id="toDate">
-                      <label _ngcontent-c8="" for="">Hasta</label>
-                      <div class="col-2 ">
-                        <input data-date-format="dd/mm/yyyy" id="datepicker2" style="height: 34px; border-radius: 4px; border: 1px solid #ccc;">
-                      </div>
-                    </div>
-                    <div
-                    _ngcontent-c8=""
-                    class="pull-left wd-md"
-                    id="dropdownStatus"
-                  >
                     <div
                       _ngcontent-c8=""
-                      class="btn-group mostrar-btn col-lg-2"
-                      dropdown=""
+                      class="pull-left wd-md col-lg-2"
+                      id="fromDate"
                     >
-                      <label _ngcontent-c8="" for="">Mostrar</label>
-                      <button
-                        _ngcontent-c8=""
-                        class="btn"
-                        dropdowntoggle=""
-                        aria-haspopup="true"
-                      >
-                        <strong _ngcontent-c8="">Todas</strong>
-                        <b _ngcontent-c8="" class="fa fa-caret-down"></b>
-                      </button>
-                      <!---->
+                      <label _ngcontent-c8="" for="">Desde</label>
+                      <div class="col-2">
+                        <input
+                          data-date-format="dd/mm/yyyy"
+                          id="datepicker"
+                          style="
+                            height: 34px;
+                            border-radius: 4px;
+                            border: 1px solid #ccc;
+                          "
+                        />
+                      </div>
                     </div>
-                  </div>
+                    <div
+                      _ngcontent-c8=""
+                      class="pull-left wd-md col-lg-2"
+                      id="toDate"
+                    >
+                      <label _ngcontent-c8="" for="">Hasta</label>
+                      <div class="col-2">
+                        <input
+                          data-date-format="dd/mm/yyyy"
+                          id="datepicker2"
+                          style="
+                            height: 34px;
+                            border-radius: 4px;
+                            border: 1px solid #ccc;
+                          "
+                        />
+                      </div>
+                    </div>
+                    <div
+                      _ngcontent-c8=""
+                      class="pull-left wd-md"
+                      id="dropdownStatus"
+                    >
+                      <div
+                        _ngcontent-c8=""
+                        class="btn-group mostrar-btn col-lg-2"
+                        dropdown=""
+                      >
+                        <label _ngcontent-c8="" for="">Mostrar</label>
+                        <button
+                          _ngcontent-c8=""
+                          class="btn"
+                          dropdowntoggle=""
+                          aria-haspopup="true"
+                        >
+                          <strong _ngcontent-c8="">Todas</strong>
+                          <b _ngcontent-c8="" class="fa fa-caret-down"></b>
+                        </button>
+                        <!---->
+                      </div>
+                    </div>
                     <div _ngcontent-c8="" class="pull-left wd-md resetFiltros">
                       <button
                         _ngcontent-c8=""
@@ -703,7 +742,10 @@
       src="../../lib/jquery.dcjqaccordion.2.7.js"
     ></script>
     <script src="../../lib/jquery.scrollTo.min.js"></script>
-    <script src="../../lib/jquery.nicescroll.js" type="text/javascript"></script>
+    <script
+      src="../../lib/jquery.nicescroll.js"
+      type="text/javascript"
+    ></script>
     <script src="../../lib/jquery.sparkline.js"></script>
     <!--common script for all pages-->
     <script src="../../lib/common-scripts.js"></script>
@@ -715,21 +757,26 @@
     <!--script for this page-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script type="text/javascript">
-        $('#datepicker').datepicker({
-            weekStart: 1,
-            daysOfWeekHighlighted: "6,0",
-            autoclose: true,
-            todayHighlight: true,
-        });
-        $('#datepicker').datepicker("setDate", new Date());
-        $('#datepicker2').datepicker({
-            weekStart: 1,
-            daysOfWeekHighlighted: "6,0",
-            autoclose: true,
-            todayHighlight: true,
-        });
-        $('#datepicker2').datepicker("setDate", new Date());
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $("#datepicker").datepicker({
+        weekStart: 1,
+        daysOfWeekHighlighted: "6,0",
+        autoclose: true,
+        todayHighlight: true,
+      });
+      $("#datepicker").datepicker("setDate", new Date());
+      $("#datepicker2").datepicker({
+        weekStart: 1,
+        daysOfWeekHighlighted: "6,0",
+        autoclose: true,
+        todayHighlight: true,
+      });
+      $("#datepicker2").datepicker("setDate", new Date());
     </script>
     <script src="../../lib/sparkline-chart.js"></script>
     <script src="../../lib/zabuto_calendar.js"></script>
