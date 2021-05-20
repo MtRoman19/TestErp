@@ -1,6 +1,6 @@
 <?php
 
-class empresas extends Controller{
+class Empresas extends Controller{
 
     function __construct(){
         parent::__construct();
