@@ -17,14 +17,13 @@ class Auth extends Controller{
     }
 
     function newRegister(){
-        $this->view->url = 'auth/register';
+        $this->view->url = 'index/index';
         $this->view->render('layout');
 
         $correo = $_POST['correo'];
         $nombre = $_POST['nombre'];
         $contra = $_POST['contra'];
 
-        echo 'hola creado';
         $this->model->insert(['correo' => $correo, 'nombre' => $nombre, 'contra' => $contra]);
     }
 

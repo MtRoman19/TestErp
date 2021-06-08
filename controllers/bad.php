@@ -6,7 +6,7 @@ class Bad extends Controller{
         parent::__construct();
          $this->view->url = 'error/404';
         $this->view->render('layout');
-     //   echo "<p>No existe controlador</p>";
+
     }
 }
 
